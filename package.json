@@ -1,0 +1,28 @@
+{
+  "name": "@dqn/renovate-config",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "test": "renovate-config-validator"
+  },
+  "renovate-config": {
+    "default": {
+      "extends": [
+        "config:base"
+      ],
+      "assignees": [
+        "dqn"
+      ],
+      "lockFileMaintenance": {
+        "enabled": true
+      },
+      "postUpdateOptions": [
+        "gomodTidy",
+        "yarnDedupeHighest"
+      ]
+    }
+  },
+  "devDependencies": {
+    "renovate": "^23.31.1"
+  }
+}
