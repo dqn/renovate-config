@@ -19,7 +19,8 @@
       "postUpdateOptions": [
         "gomodTidy",
         "yarnDedupeHighest"
-      ]
+      ],
+      "rangeStrategy": "auto"
     }
   },
   "devDependencies": {
