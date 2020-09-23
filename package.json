@@ -23,21 +23,12 @@
       "packageRules": [
         {
           "automerge": true,
+          "major": {
+            "automerge": false
+          },
           "depTypeList": [
-            "dependencies"
-          ],
-          "updateTypes": [
-            "patch"
-          ]
-        },
-        {
-          "automerge": true,
-          "depTypeList": [
+            "dependencies",
             "devDependencies"
-          ],
-          "updateTypes": [
-            "digest",
-            "minor"
           ]
         },
         {
