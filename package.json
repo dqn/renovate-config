@@ -20,6 +20,45 @@
         "gomodTidy",
         "yarnDedupeHighest"
       ],
+      "packageRules": [
+        {
+          "automerge": true,
+          "depTypeList": [
+            "dependencies"
+          ],
+          "updateTypes": [
+            "patch"
+          ]
+        },
+        {
+          "automerge": true,
+          "depTypeList": [
+            "devDependencies"
+          ],
+          "updateTypes": [
+            "digest",
+            "minor"
+          ]
+        },
+        {
+          "automerge": true,
+          "major": {
+            "automerge": false
+          },
+          "packageNames": [
+            "renovate"
+          ]
+        },
+        {
+          "automerge": true,
+          "major": {
+            "automerge": false
+          },
+          "packagePatterns": [
+            "^@types/"
+          ]
+        }
+      ],
       "rangeStrategy": "auto"
     }
   },
