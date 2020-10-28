@@ -39,15 +39,6 @@
           "packageNames": [
             "renovate"
           ]
-        },
-        {
-          "automerge": true,
-          "major": {
-            "automerge": false
-          },
-          "packagePatterns": [
-            "^@types/"
-          ]
         }
       ],
       "rangeStrategy": "auto"
