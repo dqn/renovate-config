@@ -45,6 +45,6 @@
     }
   },
   "devDependencies": {
-    "renovate": "29.9.0"
+    "renovate": "29.10.1"
   }
 }
