@@ -45,6 +45,6 @@
     }
   },
   "devDependencies": {
-    "renovate": "35.57.4"
+    "renovate": "35.58.0"
   }
 }
