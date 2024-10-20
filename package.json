@@ -1,50 +1,12 @@
 {
   "name": "@dqn/renovate-config",
+  "description": "Renovate config for @dqn",
   "version": "0.2.1",
   "license": "MIT",
   "scripts": {
-    "test": "renovate-config-validator"
-  },
-  "renovate-config": {
-    "default": {
-      "extends": [
-        "config:base"
-      ],
-      "assignees": [
-        "dqn"
-      ],
-      "lockFileMaintenance": {
-        "enabled": true
-      },
-      "postUpdateOptions": [
-        "gomodTidy",
-        "yarnDedupeHighest"
-      ],
-      "packageRules": [
-        {
-          "automerge": true,
-          "major": {
-            "automerge": false
-          },
-          "depTypeList": [
-            "dependencies",
-            "devDependencies"
-          ]
-        },
-        {
-          "automerge": true,
-          "major": {
-            "automerge": false
-          },
-          "packageNames": [
-            "renovate"
-          ]
-        }
-      ],
-      "rangeStrategy": "auto"
-    }
+    "test": "renovate-config-validator --strict"
   },
   "devDependencies": {
-    "renovate": "37.440.7"
+    "renovate": "^38.128.3"
   }
 }
